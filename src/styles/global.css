@@ -11,7 +11,8 @@ html {
   opacity: 0;
 }
 
-.wf-active * {
+.wf-active *,
+.wf-inactive * {
   opacity: 1;
   transition: opacity 144ms ease-in-out;
 }
