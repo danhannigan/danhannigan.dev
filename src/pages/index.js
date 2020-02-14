@@ -4,28 +4,26 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 
-class BlogIndex extends React.Component {
+class SiteIndex extends React.Component {
   render() {
     const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
+    // const siteTitle = data.site.siteMetadata.title
+    // const posts = data.allMarkdownRemark.edges
+    // const postEdges = data.blog.edges
+    // const projectEdges = data.project.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
+      <Layout location={this.props.location}>
+        <SEO title="Dan Hannigan - Front End Developer & Designer in Denver, Colorado." />
         <Bio />
-        {posts.map(({ node }) => {
+        {/* <h2>Projects</h2>
+        {projectEdges.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <article key={node.fields.slug}>
               <header>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
+                <h3>
                   <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                     {title}
                   </Link>
@@ -42,34 +40,75 @@ class BlogIndex extends React.Component {
             </article>
           )
         })}
+        <h2>Blog</h2>
+        {postEdges.map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug
+          return (
+            <article key={node.fields.slug}>
+              <header>
+                <h3>
+                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                    {title}
+                  </Link>
+                </h3>
+                <small>{node.frontmatter.date}</small>
+              </header>
+              <section>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: node.frontmatter.description || node.excerpt,
+                  }}
+                />
+              </section>
+            </article>
+          )
+        })} */}
       </Layout>
     )
   }
 }
 
-export default BlogIndex
+export default SiteIndex
 
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
-          }
-        }
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query IndexQuery {
+//     blog: allMarkdownRemark(
+//       limit: 2000
+//       filter: { fileAbsolutePath: { regex: "/blog/" } }
+//     ) {
+//       edges {
+//         node {
+//           fields {
+//             slug
+//           }
+//           excerpt
+//           timeToRead
+//           frontmatter {
+//             title
+//             tags
+//             date
+//           }
+//         }
+//       }
+//     }
+//     project: allMarkdownRemark(
+//       limit: 2000
+//       filter: { fileAbsolutePath: { regex: "/project/" } }
+//     ) {
+//       edges {
+//         node {
+//           fields {
+//             slug
+//           }
+//           excerpt
+//           timeToRead
+//           frontmatter {
+//             title
+//             tags
+//             date
+//           }
+//         }
+//       }
+//     }
+//   }
+// `

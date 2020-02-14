@@ -1,7 +1,14 @@
 ---
-title: Hello World
-date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+postType: "blog"
+path: "/hello-world"
+date: "2019-05-01"
+title: "Hello World"
+category: "blog"
+tags:
+- "Community"
+- "Developers"
+- "Slack"
+description: "Stuff"
 ---
 
 This is my first post on my new fake blog! How exciting!

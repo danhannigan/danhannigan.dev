@@ -1,0 +1,70 @@
+html {
+  background: #1c1d30;
+  color: #fff;
+  font-family: Hind, Sans-Serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  font-display: swap;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Montserrat, sans-serif;
+}
+
+h1 {
+  letter-spacing: -1.5px;
+  margin-bottom: 2em;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 3em 0 0.5em 0;
+  padding: 0;
+}
+
+p {
+  margin: 0 0 1.8em 0;
+  padding: 0;
+  line-height: 1.8em;
+}
+
+footer {
+  margin-top: 4em;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+a {
+  color: #ff8989;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #676997;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 144ms ease-in-out;
+}
+
+a:hover::after {
+  opacity: 1;
+  transition: opacity 144ms ease-in-out;
+}
+
+h3 a:after {
+  bottom: 0px;
+}
+
+.end-cap {
+  margin-top: 2em;
+}

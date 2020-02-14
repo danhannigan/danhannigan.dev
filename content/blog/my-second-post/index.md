@@ -1,6 +1,14 @@
 ---
-title: My Second Post!
-date: "2015-05-06T23:46:37.121Z"
+postType: "blog"
+path: "/second-post"
+date: "2019-05-01"
+title: "Second Post"
+category: "D&D"
+tags:
+- "Community"
+- "Developers"
+- "Slack"
+description: "Stuff"
 ---
 
 Wow! I love blogging so much already.
