@@ -7,6 +7,15 @@ html {
   font-display: swap;
 }
 
+.wf-loading * {
+  opacity: 0;
+}
+
+.wf-active * {
+  opacity: 1;
+  transition: opacity 144ms ease-in-out;
+}
+
 h1,
 h2,
 h3 {
