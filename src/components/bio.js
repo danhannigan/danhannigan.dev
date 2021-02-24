@@ -26,20 +26,11 @@ const Bio = () => {
       <p>
         Since 2015 I've managed{" "}
         <a href="https://www.denverdevs.org/">Denver Devs</a> — a community of
-        9000+ developers & techies based on Slack. Besides making sure the
-        channels stay tidy, I designed & built the{" "}
-        <a href="https://www.denverdevs.org/">Denver Devs website</a> — which is
-        currently using VuePress with some AWS Lambda sprinkled in. I'm working
-        on bringing it over to Gatsby with a new design and a lot more features.
-        You can view that code in the{" "}
-        <a href="https://github.com/Denver-Devs?type=source">
-          Denver Devs Github
-        </a>{" "}
-        org.
+        9000+ developers & techies based on Slack. Anyone can join us, so give it a look if you'd like.
       </p>
       <p>
         My hobby time is spent being a forever Dungeon Master for D&D, 3d
-        printing, painting miniatures, board games, and video games.
+        printing, painting miniatures, board games, and video games (Destiny 2 takes up plenty of time there).
       </p>
       <h3>
         Want to chat about running a community, frontend stuff, or how to not
