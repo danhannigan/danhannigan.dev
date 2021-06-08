@@ -9,12 +9,11 @@ const Bio = () => {
         boutique advertising agencies since 2011. In 2018 I changed gears to
         product/SaaS work and I couldn't be happier.
       </p>
+      <p>Currently, I very recently joined the team at <a href="http://cisco.webex.com">Cisco</a> to help iron out the UI/UX and design systems of the video platform (video.cisco.com). I'm excited for this new journey! </p> 
       <p>
-        Currently, I'm tapping away on a React app at{" "}
+        Previously I was a Frontend Engineer / UX Engineer at{" "}
         <a href="https://airdna.co">AirDNA</a> — a startup specializing in
-        Vacation Rental Data — where I like to use my skills to build out and
-        polish the UI/UX for our users and aid communication between design &
-        development internally.
+        Vacation Rental Data.
       </p>
       <p>
         I've also worked with some great folks and clients at top-notch agencies
