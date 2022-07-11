@@ -5,11 +5,19 @@ export default function Document() {
     <Html>
       <Head>
         <script
-          async
-          defer
-          data-website-id="4124e679-f902-4288-ac2a-c07861eaa94d"
-          src="https://luminous-sunburst-e0c391.netlify.app/umami.js"
-        ></script>
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,${
+                process.env.NODE_ENV === "development" ? "debug_mode: true" : ""
+              }
+            });
+          `,
+          }}
+        />
       </Head>
       <body className="bg-white dark:bg-slate-900">
         <Main />

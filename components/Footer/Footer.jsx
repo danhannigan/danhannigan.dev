@@ -76,12 +76,12 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="video-games">
+                <Link href="/video-games">
                   <a className="hover:underline">Game List</a>
                 </Link>
               </li>
               <li>
-                <Link href="board-games">
+                <Link href="/board-games">
                   <a className="hover:underline">Board Game List</a>
                 </Link>
               </li>
