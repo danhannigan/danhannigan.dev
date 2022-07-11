@@ -5,3 +5,6 @@ node_modules
 public/sitemap.xml
 public/feed.xml
 .env
+
+# Local Netlify folder
+.netlify
