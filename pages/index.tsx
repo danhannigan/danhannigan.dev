@@ -90,6 +90,7 @@ export default function Home({ readingTable, playingTable }) {
           Listening <span className="text-slate-400">&bull; 2022</span>
         </h3>
         <iframe
+          loading="lazy"
           allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
           frameBorder="0"
           height="450"
