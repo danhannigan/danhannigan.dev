@@ -1,9 +1,13 @@
 import React, { useEffect } from "react";
 import "../styles/globals.css";
+import "../styles/transitions.css";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 
 import * as ga from "../lib/ga";
+import Transition from "../components/Transition";
 
-function MyApp({ Component, pageProps, router }) {
+function App({ Component, pageProps, router }) {
   useEffect(() => {
     const handleRouteChange = (url) => {
       ga.pageview(url);
@@ -14,7 +18,15 @@ function MyApp({ Component, pageProps, router }) {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, [router.events]);
-  return <Component {...pageProps} />;
+  return (
+    <div className="flex h-screen flex-col justify-between">
+      <Header />
+      <Transition>
+        <Component {...pageProps} />
+      </Transition>
+      <Footer />
+    </div>
+  );
 }
 
-export default MyApp;
+export default App;

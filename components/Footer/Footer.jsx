@@ -3,13 +3,11 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className="mx-auto mb-4 max-w-prose px-4 sm:p-6 xl:px-0">
-      <hr className="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8" />
-
+    <footer className="pl-14">
       <div className="">
         <div className="grid grid-cols-3 gap-8 sm:gap-6">
           <div>
-            <ul className="text-gray-600 dark:text-gray-400">
+            <ul className="text-text-default">
               <li>
                 <Link href="/">
                   <a className="hover:underline">Home</a>
