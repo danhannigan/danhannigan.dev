@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import "../styles/globals.css";
-import "../styles/transitions.css";
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 import * as ga from "../lib/ga";
 import Transition from "../components/Transition";

@@ -1,12 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
-import PageLayout from "../layouts/PageLayout";
 import { getReadingTable, getPlayingTable } from "../lib/getAirbnbData";
-import BookList from "../components/BookList/BookList";
-import PlayingList from "../components/PlayingList/PlayingList";
+import PageLayout from "../components/PageLayout";
 import fs from "fs";
 import matter from "gray-matter";
-import Posts from "./posts";
 import Link from "next/link";
 
 export default function Home({ readingTable, playingTable, posts }) {

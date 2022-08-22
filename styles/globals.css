@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 body {
-  /* background-color: darkblue; */
-  /* background-image: url("/background.svg"); */
-  /* background-image: url("/images/lightbg.svg"); */
   background-size: cover;
+}
+
+.page-transition {
+  overflow: hidden;
 }

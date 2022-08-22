@@ -5,7 +5,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import matter from "gray-matter";
-import PageLayout from "../layouts/PageLayout";
+import PageLayout from "../components/PageLayout";
 
 export async function getStaticProps() {
   const files = fs.readdirSync("posts");
