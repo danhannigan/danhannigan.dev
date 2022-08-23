@@ -34,7 +34,7 @@ export default function Home({ readingTable, playingTable, posts }) {
             </a>
           </div>
         </div>
-        <div className="px-10 md:ml-12">
+        <div className="md:ml-12">
           {posts.map((post) => (
             <div key={post.id} className="flex">
               <div className="hidden md:block">

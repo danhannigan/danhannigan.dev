@@ -22,23 +22,21 @@ const Transition = ({ children }) => {
   };
 
   return (
-    <div className="effect-1">
-      <AnimatePresence
-        initial={false}
-        exitBeforeEnter
-        onExitComplete={() => window.scrollTo(0, 0)}
+    <AnimatePresence
+      initial={false}
+      exitBeforeEnter
+      onExitComplete={() => window.scrollTo(0, 0)}
+    >
+      <motion.div
+        key={asPath}
+        variants={variants}
+        animate="in"
+        initial="out"
+        exit="out"
       >
-        <motion.div
-          key={asPath}
-          variants={variants}
-          animate="in"
-          initial="out"
-          exit="out"
-        >
-          {children}
-        </motion.div>
-      </AnimatePresence>
-    </div>
+        {children}
+      </motion.div>
+    </AnimatePresence>
   );
 };
 

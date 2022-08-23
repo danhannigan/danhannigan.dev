@@ -2,7 +2,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import md from "markdown-it";
 import Link from "next/link";
-import PageLayout from "../../layouts/PageLayout";
+import PageLayout from "../../components/PageLayout";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("posts");
@@ -31,7 +31,7 @@ export async function getStaticProps({ params: { slug } }) {
 export default function PostPage({ frontmatter, content }) {
   return (
     <PageLayout>
-      <div className="relative flex flex-row">
+      <div className="relative md:flex md:flex-row">
         <div className="hidden w-[140px] text-center md:block">
           <div className="sticky top-20 text-background-accent-neutral">
             <svg
@@ -57,7 +57,7 @@ export default function PostPage({ frontmatter, content }) {
           </div>
         </div>
         <article className="md:ml-12">
-          <div className="flex">
+          <div className="md:flex">
             <section className="hidden md:block">
               <div className="sticky top-20">
                 <time
@@ -76,13 +76,13 @@ export default function PostPage({ frontmatter, content }) {
                 </div>
               </div>
             </section>
-            <section className="mb-28 max-w-2xl px-10 md:ml-8 md:px-0">
+            <section className="mb-28 max-w-2xl md:ml-8 md:px-0">
               <h3 className="mb-4 font-secondary text-5xl font-bold">
                 {frontmatter.Title}
               </h3>
               <div
                 dangerouslySetInnerHTML={{ __html: md().render(content) }}
-                className="prose prose-2xl prose-invert prose-headings:font-secondary prose-p:font-primary prose-a:text-accent prose-blockquote:border-background-accent-dark prose-hr:border-background-accent-dark md:prose-base"
+                className="prose prose-invert prose-headings:font-secondary prose-p:font-primary prose-a:text-accent prose-blockquote:border-background-accent-dark prose-hr:border-background-accent-dark md:prose-base"
               />
             </section>
           </div>
