@@ -29,7 +29,7 @@ export async function getStaticProps() {
 
 const Posts = ({ posts }) => {
   return (
-    <PageLayout>
+    <PageLayout title="Posts" description="Archive of posts">
       <Head>
         <title>Dan Hannigan - Posts</title>
       </Head>

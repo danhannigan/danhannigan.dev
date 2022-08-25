@@ -34,7 +34,10 @@ export async function getStaticProps({ params: { slug } }) {
 
 export default function PostPage({ frontmatter, readingTime, content }) {
   return (
-    <PageLayout>
+    <PageLayout
+      title={`${frontmatter.title} - Blog`}
+      description={frontmatter.summary}
+    >
       <div className="relative mt-36 px-4 md:flex md:flex-row md:px-14">
         <div className="hidden w-[140px] text-center md:block">
           <div className="sticky top-20 text-background-accent-neutral">

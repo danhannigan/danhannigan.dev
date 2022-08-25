@@ -26,7 +26,7 @@ export default function Document() {
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
-          crossOrigin
+          crossOrigin="true"
         ></link>
         <link
           href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Josefin+Sans:wght@300;400;700&family=Lato&display=swap"

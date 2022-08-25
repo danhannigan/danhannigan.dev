@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Dan Hannnigan</title>
+        <link>https://danhannigan.dev</link>
+        <description>Personal website for Dan Hannigan, front end developer, designer, and community leader in Denver, Colorado.</description>
+        <lastBuildDate>Thu, 25 Aug 2022 23:57:28 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Feed for Node.js</generator>
+        <image>
+            <title>Dan Hannnigan</title>
+            <url>https://danhannigan.dev/favicon.ico</url>
+            <link>https://danhannigan.dev</link>
+        </image>
+        <copyright>All rights reserved 2022, Dan Hannigan</copyright>
+        <item>
+            <title><![CDATA[Markdown Test Page]]></title>
+            <link>https://danhannigan.dev/posts/text-copy</link>
+            <guid>https://danhannigan.dev/posts/text-copy</guid>
+            <pubDate>Mon, 22 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.]]></description>
+            <content:encoded><![CDATA[Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.]]></content:encoded>
+            <author>hi@danhannigan.dev (Dan Hannigan)</author>
+        </item>
+        <item>
+            <title><![CDATA[Markdown Test Page]]></title>
+            <link>https://danhannigan.dev/posts/test</link>
+            <guid>https://danhannigan.dev/posts/test</guid>
+            <pubDate>Tue, 02 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.]]></description>
+            <content:encoded><![CDATA[Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.]]></content:encoded>
+            <author>hi@danhannigan.dev (Dan Hannigan)</author>
+        </item>
+        <item>
+            <title><![CDATA[Markdown Test Page]]></title>
+            <link>https://danhannigan.dev/posts/test-copy-2</link>
+            <guid>https://danhannigan.dev/posts/test-copy-2</guid>
+            <pubDate>Sat, 02 Jul 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.]]></description>
+            <content:encoded><![CDATA[Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.]]></content:encoded>
+            <author>hi@danhannigan.dev (Dan Hannigan)</author>
+        </item>
+        <item>
+            <title><![CDATA[Markdown Test Page]]></title>
+            <link>https://danhannigan.dev/posts/test-copy-3</link>
+            <guid>https://danhannigan.dev/posts/test-copy-3</guid>
+            <pubDate>Thu, 02 Jun 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.]]></description>
+            <content:encoded><![CDATA[Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.]]></content:encoded>
+            <author>hi@danhannigan.dev (Dan Hannigan)</author>
+        </item>
+    </channel>
+</rss>

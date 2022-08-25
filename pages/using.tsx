@@ -4,7 +4,7 @@ import { getUsingTable } from "../lib/getAirbnbData";
 
 const Using = ({ usingTable }) => {
   return (
-    <PageLayout>
+    <PageLayout title="Uses" description="A list of the things I use daily">
       {usingTable.map((item) => (
         <div key={item.id}>{item.name}</div>
       ))}

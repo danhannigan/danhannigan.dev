@@ -1,0 +1,62 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Dan Hannnigan",
+    "home_page_url": "https://danhannigan.dev",
+    "feed_url": "https://danhannigan.dev/rss/feed.json",
+    "description": "Personal website for Dan Hannigan, front end developer, designer, and community leader in Denver, Colorado.",
+    "icon": "https://danhannigan.dev/favicon.ico",
+    "author": {
+        "name": "Dan Hannigan",
+        "url": "https://twitter.com/danhannigan"
+    },
+    "items": [
+        {
+            "id": "https://danhannigan.dev/posts/text-copy",
+            "content_html": "Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.",
+            "url": "https://danhannigan.dev/posts/text-copy",
+            "title": "Markdown Test Page",
+            "summary": "Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.",
+            "date_modified": "2022-08-22T00:00:00.000Z",
+            "author": {
+                "name": "Dan Hannigan",
+                "url": "https://twitter.com/danhannigan"
+            }
+        },
+        {
+            "id": "https://danhannigan.dev/posts/test",
+            "content_html": "Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.",
+            "url": "https://danhannigan.dev/posts/test",
+            "title": "Markdown Test Page",
+            "summary": "Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.",
+            "date_modified": "2022-08-02T00:00:00.000Z",
+            "author": {
+                "name": "Dan Hannigan",
+                "url": "https://twitter.com/danhannigan"
+            }
+        },
+        {
+            "id": "https://danhannigan.dev/posts/test-copy-2",
+            "content_html": "Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.",
+            "url": "https://danhannigan.dev/posts/test-copy-2",
+            "title": "Markdown Test Page",
+            "summary": "Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.",
+            "date_modified": "2022-07-02T00:00:00.000Z",
+            "author": {
+                "name": "Dan Hannigan",
+                "url": "https://twitter.com/danhannigan"
+            }
+        },
+        {
+            "id": "https://danhannigan.dev/posts/test-copy-3",
+            "content_html": "Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.",
+            "url": "https://danhannigan.dev/posts/test-copy-3",
+            "title": "Markdown Test Page",
+            "summary": "Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.",
+            "date_modified": "2022-06-02T00:00:00.000Z",
+            "author": {
+                "name": "Dan Hannigan",
+                "url": "https://twitter.com/danhannigan"
+            }
+        }
+    ]
+}
