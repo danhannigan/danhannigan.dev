@@ -1,13 +1,14 @@
 import React from "react";
 import Link from "next/link";
+import ArrowLink from "../ArrowLink";
 
 function Footer() {
   return (
-    <footer className="pl-14">
+    <footer className="py-20 pl-14 font-primary text-sm font-bold text-accent">
       <div className="">
-        <div className="grid grid-cols-3 gap-8 sm:gap-6">
+        <div className="flex gap-12">
           <div>
-            <ul className="text-text-default">
+            <ul>
               <li>
                 <Link href="/">
                   <a className="hover:underline">Home</a>
@@ -31,7 +32,7 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <ul className="text-gray-600 dark:text-gray-400">
+            <ul>
               <li>
                 <a
                   href="https://github.com/danhannigan"
@@ -67,7 +68,7 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <ul className="text-gray-600 dark:text-gray-400">
+            <ul>
               <li>
                 <Link href="/books">
                   <a className="hover:underline">Book List</a>

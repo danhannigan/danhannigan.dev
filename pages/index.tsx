@@ -2,7 +2,9 @@ import Head from "next/head";
 import { getReadingTable, getPlayingTable } from "../lib/getAirbnbData";
 import PageLayout from "../components/PageLayout";
 import PlayingList from "../components/PlayingList";
+import ItemList from "../components/ItemList";
 import BookList from "../components/BookList";
+import ArrowLink from "../components/ArrowLink";
 import fs from "fs";
 import matter from "gray-matter";
 import Link from "next/link";
@@ -13,7 +15,7 @@ export default function Home({ readingTable, playingTable, posts }) {
       <Head>
         <title>Dan Hannigan - Denver, Colorado Frontend Developer</title>
       </Head>
-      <div className="mt-36 flex flex-row px-14">
+      <div className="mt-36 flex flex-row px-4 md:px-14">
         <div className="hidden w-[140px] text-center md:block">
           <div className="sticky top-36">
             <svg
@@ -31,9 +33,9 @@ export default function Home({ readingTable, playingTable, posts }) {
                 fill="#fff"
               />
             </svg>
-            <a href="#" className=" font-primary text-sm font-bold text-accent">
+            {/* <a href="#" className=" font-primary text-sm font-bold text-accent">
               View Archive
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="md:ml-12">
@@ -52,13 +54,13 @@ export default function Home({ readingTable, playingTable, posts }) {
                   <div>32</div>
                 </div>
               </div>
-              <div className="mb-28 max-w-2xl md:ml-8">
+              <div className="mb-14 max-w-2xl md:mb-28 md:ml-8">
                 <Link href={`/post/${post.slug}`} scroll={false}>
                   <h3 className="mb-4 font-secondary text-3xl font-bold transition duration-300 ease-in-out hover:cursor-pointer hover:text-accent md:text-5xl">
                     {post.frontmatter.Title}
                   </h3>
                 </Link>
-                <p className="font-primary leading-relaxed">
+                <p className="mb-4 font-primary leading-relaxed">
                   Quisque egestas diam in arcu cursus. Morbi tristique senectus
                   et netus et malesuada fames ac. Ullamcorper morbi tincidunt
                   ornare massa eget egestas purus. Nunc sed blandit libero
@@ -68,19 +70,19 @@ export default function Home({ readingTable, playingTable, posts }) {
                   convallis tellus id interdum velit. Egestas quis ipsum
                   suspendisse ultrices gravida dictum.
                 </p>
-                <Link href={`/post/${post.slug}`} scroll={false}>
-                  <a className="mt-4 block font-primary font-bold text-accent duration-300 ease-in-out hover:cursor-pointer hover:transition-all">
-                    Read more
-                  </a>
-                </Link>
+                <ArrowLink
+                  href={`/post/${post.slug}`}
+                  iconPosition={"right"}
+                  text={"Read More"}
+                />
               </div>
             </div>
           ))}
         </div>
       </div>
-      <div className="mt-24 flex flex-col gap-8 bg-background-dark py-20 px-14">
-        <BookList data={readingTable} />
-        <PlayingList data={playingTable} />
+      <div className="mt-24 flex flex-col gap-10 bg-background-dark py-20">
+        <ItemList data={readingTable} type={"read"} />
+        <ItemList data={playingTable} type={"play"} />
       </div>
     </PageLayout>
   );

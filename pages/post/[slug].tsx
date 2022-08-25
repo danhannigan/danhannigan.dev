@@ -31,7 +31,7 @@ export async function getStaticProps({ params: { slug } }) {
 export default function PostPage({ frontmatter, content }) {
   return (
     <PageLayout>
-      <div className="relative md:flex md:flex-row">
+      <div className="relative mt-36 px-4 md:flex md:flex-row md:px-14">
         <div className="hidden w-[140px] text-center md:block">
           <div className="sticky top-20 text-background-accent-neutral">
             <svg
