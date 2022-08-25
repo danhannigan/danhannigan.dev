@@ -3,7 +3,9 @@ import matter from "gray-matter";
 import md from "markdown-it";
 import Link from "next/link";
 import PageLayout from "../../components/PageLayout";
+import PostMeta from "../../components/PostMeta";
 import BlogSVG from "../../public/BlogSVG.svg";
+import readingTime from "reading-time";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("posts");
@@ -25,11 +27,12 @@ export async function getStaticProps({ params: { slug } }) {
     props: {
       frontmatter,
       content,
+      readingTime: readingTime(fileName),
     },
   };
 }
 
-export default function PostPage({ frontmatter, content }) {
+export default function PostPage({ frontmatter, readingTime, content }) {
   return (
     <PageLayout>
       <div className="relative mt-36 px-4 md:flex md:flex-row md:px-14">
@@ -47,20 +50,7 @@ export default function PostPage({ frontmatter, content }) {
           <div className="md:flex">
             <section className="hidden md:block">
               <div className="sticky top-20">
-                <time
-                  className="mb-2 block bg-background-accent-dark py-0.5 px-2 text-center font-accent text-xs text-text-accent-weak/70"
-                  dateTime="2022-06-22 19:00"
-                >
-                  6<span className="px-1 text-text-accent-weak/40">/</span>27
-                  <span className="px-1 text-text-accent-weak/40">/</span>22
-                </time>
-                <div className="grid grid-cols-3 grid-rows-2 gap-2 font-accent text-xs font-bold text-text-muted">
-                  <div>DEV</div>
-                  <div>ES</div>
-                  <div>L</div>
-                  <div>364</div>
-                  <div>32</div>
-                </div>
+                <PostMeta data={{ ...frontmatter, ...readingTime }} />
               </div>
             </section>
             <section className="mb-28 max-w-2xl md:ml-8 md:px-0">

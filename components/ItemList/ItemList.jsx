@@ -37,7 +37,7 @@ function ItemList({ type, data }) {
                 </span>
               )}
               {type === "read" && item.status !== "Reading" && (
-                <span className="inline-flex items-center bg-background-accent-dark px-2.5 py-0.5 font-accent text-xs font-medium text-white/70">
+                <span className="inline-flex items-center bg-background-accent-dark px-2.5 py-1 font-accent text-xs font-bold leading-none tracking-widest text-white/60">
                   {format(new Date(item.finished), "MM / dd")}
                 </span>
               )}
