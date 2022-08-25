@@ -1,6 +1,8 @@
 import Head from "next/head";
 import { getReadingTable, getPlayingTable } from "../lib/getAirbnbData";
 import PageLayout from "../components/PageLayout";
+import PlayingList from "../components/PlayingList";
+import BookList from "../components/BookList";
 import fs from "fs";
 import matter from "gray-matter";
 import Link from "next/link";
@@ -11,9 +13,9 @@ export default function Home({ readingTable, playingTable, posts }) {
       <Head>
         <title>Dan Hannigan - Denver, Colorado Frontend Developer</title>
       </Head>
-      <div className="flex flex-row">
+      <div className="mt-36 flex flex-row px-14">
         <div className="hidden w-[140px] text-center md:block">
-          <div className="sticky top-20">
+          <div className="sticky top-36">
             <svg
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -75,6 +77,10 @@ export default function Home({ readingTable, playingTable, posts }) {
             </div>
           ))}
         </div>
+      </div>
+      <div className="mt-24 flex flex-col gap-8 bg-background-dark py-20 px-14">
+        <BookList data={readingTable} />
+        <PlayingList data={playingTable} />
       </div>
     </PageLayout>
   );
