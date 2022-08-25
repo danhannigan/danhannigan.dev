@@ -1,9 +1,7 @@
 import Head from "next/head";
 import { getReadingTable, getPlayingTable } from "../lib/getAirbnbData";
 import PageLayout from "../components/PageLayout";
-import PlayingList from "../components/PlayingList";
 import ItemList from "../components/ItemList";
-import BookList from "../components/BookList";
 import ArrowLink from "../components/ArrowLink";
 import fs from "fs";
 import matter from "gray-matter";
