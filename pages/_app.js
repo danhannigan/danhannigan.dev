@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 
 import * as ga from "../lib/ga";
 import Transition from "../components/Transition";
+import { AnimatePresence } from "framer-motion";
 
 function App({ Component, pageProps, router }) {
   const url = `https://danhannigan.dev${router.route}`;
@@ -38,9 +39,13 @@ function App({ Component, pageProps, router }) {
           handle: "@danhannigan",
         }}
       />
-      <Transition>
-        <Component {...pageProps} />
-      </Transition>
+      <AnimatePresence
+        exitBeforeEnter
+        initial={false}
+        onExitComplete={() => window.scrollTo(0, 0)}
+      >
+        <Component {...pageProps} canonical={url} key={url} />
+      </AnimatePresence>
       <Footer />
     </div>
   );

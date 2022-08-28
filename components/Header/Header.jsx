@@ -3,10 +3,10 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <header className="fixed z-50 block min-w-full bg-background-default/70 py-2 px-4 backdrop-blur-md md:px-14">
+    <header className="fixed z-50 block min-w-full bg-background-default/70 py-6 px-4 backdrop-blur-md md:px-14">
       <Link href="/" scroll={false}>
         <a>
-          <h1 className="font-secondary text-xl font-normal text-text-default">
+          <h1 className="font-secondary text-xl font-normal leading-none text-text-default md:pl-0.5">
             Dan Hannigan
           </h1>
         </a>
