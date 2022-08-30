@@ -4,7 +4,7 @@
         <title>Dan Hannnigan</title>
         <link>https://danhannigan.dev</link>
         <description>Personal website for Dan Hannigan, front end developer, designer, and community leader in Denver, Colorado.</description>
-        <lastBuildDate>Sun, 28 Aug 2022 20:56:41 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 30 Aug 2022 17:24:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -14,39 +14,12 @@
         </image>
         <copyright>All rights reserved 2022, Dan Hannigan</copyright>
         <item>
-            <title><![CDATA[Markdown Test Page]]></title>
-            <link>https://danhannigan.dev/posts/text-copy</link>
-            <guid>https://danhannigan.dev/posts/text-copy</guid>
-            <pubDate>Mon, 22 Aug 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.]]></description>
-            <content:encoded><![CDATA[Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.]]></content:encoded>
-            <author>hi@danhannigan.dev (Dan Hannigan)</author>
-        </item>
-        <item>
-            <title><![CDATA[Markdown Test Page]]></title>
-            <link>https://danhannigan.dev/posts/test</link>
-            <guid>https://danhannigan.dev/posts/test</guid>
-            <pubDate>Tue, 02 Aug 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.]]></description>
-            <content:encoded><![CDATA[Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.]]></content:encoded>
-            <author>hi@danhannigan.dev (Dan Hannigan)</author>
-        </item>
-        <item>
-            <title><![CDATA[Markdown Test Page]]></title>
-            <link>https://danhannigan.dev/posts/test-copy-2</link>
-            <guid>https://danhannigan.dev/posts/test-copy-2</guid>
-            <pubDate>Sat, 02 Jul 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.]]></description>
-            <content:encoded><![CDATA[Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.]]></content:encoded>
-            <author>hi@danhannigan.dev (Dan Hannigan)</author>
-        </item>
-        <item>
-            <title><![CDATA[Markdown Test Page]]></title>
-            <link>https://danhannigan.dev/posts/test-copy-3</link>
-            <guid>https://danhannigan.dev/posts/test-copy-3</guid>
-            <pubDate>Thu, 02 Jun 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.]]></description>
-            <content:encoded><![CDATA[Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.]]></content:encoded>
+            <title><![CDATA[My month-long focus on digital decluttering]]></title>
+            <link>https://danhannigan.dev/posts/my-month-long-focus-on-digital-decluttering</link>
+            <guid>https://danhannigan.dev/posts/my-month-long-focus-on-digital-decluttering</guid>
+            <pubDate>Tue, 30 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[After spending most of 2022 dealing with generalized anxiety disorder, caused by many reasons: always being online, health, and well... *gestures broadly*; I decided to take a break from my community ( Denver Devs ) and Discord. That snowballed into disconnecting from a lot more.]]></description>
+            <content:encoded><![CDATA[After spending most of 2022 dealing with generalized anxiety disorder, caused by many reasons: always being online, health, and well... *gestures broadly*; I decided to take a break from my community ( Denver Devs ) and Discord. That snowballed into disconnecting from a lot more.]]></content:encoded>
             <author>hi@danhannigan.dev (Dan Hannigan)</author>
         </item>
     </channel>
