@@ -18,7 +18,7 @@ function PostSnippet({ data }) {
             {data.frontmatter.title}
           </h3>
         </Link>
-        <p className="font-primary text-sm leading-relaxed">
+        <p className="text mb-4 font-primary leading-7 text-[#d1d5db] first-line:leading-relaxed">
           {data.frontmatter.summary}
         </p>
         <ArrowLink
