@@ -1,91 +1,48 @@
 import React from "react";
 import Link from "next/link";
+import ArrowLink from "../ArrowLink";
+import ArrowIcon from "../ArrowLink/Arrow.svg";
 
 function Footer() {
   return (
-    <footer className="mx-auto mb-4 max-w-prose px-4 sm:p-6 xl:px-0">
-      <hr className="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8" />
-
+    <footer className="md:text-1xl border-t border-t-background-accent-dark p-4 font-accent text-lg font-bold uppercase tracking-widest text-background-accent-neutral md:py-6 md:pl-14">
       <div className="">
-        <div className="grid grid-cols-3 gap-8 sm:gap-6">
-          <div>
-            <ul className="text-gray-600 dark:text-gray-400">
-              <li>
-                <Link href="/">
-                  <a className="hover:underline">Home</a>
-                </Link>
-              </li>
-              {/* <li>
-                <Link href="/posts">
-                  <a className="hover:underline">Posts</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/links">
-                  <a className="hover:underline">Links</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/using">
-                  <a className="hover:underline">Using</a>
-                </Link>
-              </li> */}
-            </ul>
-          </div>
-          <div>
-            <ul className="text-gray-600 dark:text-gray-400">
-              <li>
-                <a
-                  href="https://github.com/danhannigan"
-                  className="hover:underline "
-                >
-                  Github
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com/danhannigan"
-                  className="hover:underline"
-                >
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/danhannigan/"
-                  className="hover:underline"
-                >
-                  Linkedin
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.polywork.com/danhannigan"
-                  className="hover:underline"
-                >
-                  Polywork
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <ul className="text-gray-600 dark:text-gray-400">
-              <li>
-                <Link href="/books">
-                  <a className="hover:underline">Book List</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/video-games">
-                  <a className="hover:underline">Game List</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/board-games">
-                  <a className="hover:underline">Board Game List</a>
-                </Link>
-              </li>
-            </ul>
+        <div>
+          <ul className="flex flex-wrap gap-4 md:gap-12">
+            <li className="flex items-center gap-2 md:gap-3">
+              <ArrowIcon className="h-4  md:h-4" />
+              <Link href="/">
+                <a className="">Home</a>
+              </Link>
+            </li>
+            <li className="flex items-center gap-2 md:gap-3">
+              <ArrowIcon className="h-4  md:h-4" />
+              <a href="https://github.com/danhannigan" className=" ">
+                Github
+              </a>
+            </li>
+            <li className="flex items-center gap-2 md:gap-3">
+              <ArrowIcon className="h-4  md:h-4" />
+              <a href="https://twitter.com/danhannigan" className="">
+                Twitter
+              </a>
+            </li>
+            <li className="flex items-center gap-2 md:gap-3">
+              <ArrowIcon className="h-4  md:h-4" />
+              <a href="https://www.linkedin.com/in/danhannigan/" className="">
+                Linkedin
+              </a>
+            </li>
+            <li className="flex items-center gap-2 md:gap-3">
+              <ArrowIcon className="h-4  md:h-4" />
+              <a href="https://www.polywork.com/danhannigan" className="">
+                Polywork
+              </a>
+            </li>
+          </ul>
+          <div className="mt-3 text-xs">
+            Copyright Dan Hannigan 2022. Built with Next.js, Tailwind, and
+            Airtable
           </div>
         </div>
       </div>

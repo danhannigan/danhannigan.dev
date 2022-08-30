@@ -1,0 +1,26 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Dan Hannnigan",
+    "home_page_url": "https://danhannigan.dev",
+    "feed_url": "https://danhannigan.dev/rss/feed.json",
+    "description": "Personal website for Dan Hannigan, front end developer, designer, and community leader in Denver, Colorado.",
+    "icon": "https://danhannigan.dev/favicon.ico",
+    "author": {
+        "name": "Dan Hannigan",
+        "url": "https://twitter.com/danhannigan"
+    },
+    "items": [
+        {
+            "id": "https://danhannigan.dev/posts/my-month-long-focus-on-digital-decluttering",
+            "content_html": "After spending most of 2022 dealing with generalized anxiety disorder, caused by many reasons: always being online, health, and well... *gestures broadly*; I decided to take a break from my community ( Denver Devs ) and Discord. That snowballed into disconnecting from a lot more.",
+            "url": "https://danhannigan.dev/posts/my-month-long-focus-on-digital-decluttering",
+            "title": "My month-long focus on digital decluttering",
+            "summary": "After spending most of 2022 dealing with generalized anxiety disorder, caused by many reasons: always being online, health, and well... *gestures broadly*; I decided to take a break from my community ( Denver Devs ) and Discord. That snowballed into disconnecting from a lot more.",
+            "date_modified": "2022-08-30T12:46:12.000Z",
+            "author": {
+                "name": "Dan Hannigan",
+                "url": "https://twitter.com/danhannigan"
+            }
+        }
+    ]
+}
