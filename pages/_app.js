@@ -8,17 +8,6 @@ import * as ga from "../lib/ga";
 import Transition from "../components/Transition";
 import { AnimatePresence } from "framer-motion";
 
-import { MDXProvider } from "@mdx-js/react";
-import Image from "next/image";
-
-const ResponsiveImage = (props) => (
-  <Image alt={props.alt} layout="responsive" {...props} />
-);
-
-const components = {
-  img: ResponsiveImage,
-};
-
 function App({ Component, pageProps, router }) {
   const url = `https://danhannigan.dev${router.route}`;
 
@@ -55,9 +44,7 @@ function App({ Component, pageProps, router }) {
         initial={false}
         onExitComplete={() => window.scrollTo(0, 0)}
       >
-        <MDXProvider components={components}>
-          <Component {...pageProps} canonical={url} key={url} />
-        </MDXProvider>
+        <Component {...pageProps} canonical={url} key={url} />
       </AnimatePresence>
       <Footer />
     </div>
