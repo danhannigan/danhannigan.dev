@@ -25,7 +25,7 @@ function App({ Component, pageProps, router }) {
     <div className="flex h-screen flex-col justify-between">
       <Header />
       <DefaultSeo
-        titleTemplate="%s | Dan Hanigan"
+        titleTemplate="%s | Dan Hannigan"
         openGraph={{
           type: "website",
           locale: "en_IE",
