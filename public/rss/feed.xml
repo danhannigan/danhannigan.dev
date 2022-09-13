@@ -4,7 +4,7 @@
         <title>Dan Hannnigan</title>
         <link>https://danhannigan.dev</link>
         <description>Personal website for Dan Hannigan, front end developer, designer, and community leader in Denver, Colorado.</description>
-        <lastBuildDate>Tue, 06 Sep 2022 03:07:09 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 13 Sep 2022 18:04:42 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -13,6 +13,15 @@
             <link>https://danhannigan.dev</link>
         </image>
         <copyright>All rights reserved 2022, Dan Hannigan</copyright>
+        <item>
+            <title><![CDATA[The Maintenance of Anxiety]]></title>
+            <link>https://danhannigan.dev/posts/the-maintenance-of-anxiety</link>
+            <guid>https://danhannigan.dev/posts/the-maintenance-of-anxiety</guid>
+            <pubDate>Tue, 13 Sep 2022 12:03:12 GMT</pubDate>
+            <description><![CDATA[Since being diagnosed with generalized anxiety disorder in January 2022, I've been on a path of reckoning and recalibration. Over time I've learned what my body & mind need and that if I neglect any of these areas, anxiety can start to rumble back up. Here's my maintenance schedule for anxiety...]]></description>
+            <content:encoded><![CDATA[Since being diagnosed with generalized anxiety disorder in January 2022, I've been on a path of reckoning and recalibration. Over time I've learned what my body & mind need and that if I neglect any of these areas, anxiety can start to rumble back up. Here's my maintenance schedule for anxiety...]]></content:encoded>
+            <author>hi@danhannigan.dev (Dan Hannigan)</author>
+        </item>
         <item>
             <title><![CDATA[Redesigning my website for 2022, inspired by... trains?]]></title>
             <link>https://danhannigan.dev/posts/redesigning-my-website-for-2022</link>

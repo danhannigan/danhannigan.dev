@@ -11,6 +11,18 @@
     },
     "items": [
         {
+            "id": "https://danhannigan.dev/posts/the-maintenance-of-anxiety",
+            "content_html": "Since being diagnosed with generalized anxiety disorder in January 2022, I've been on a path of reckoning and recalibration. Over time I've learned what my body & mind need and that if I neglect any of these areas, anxiety can start to rumble back up. Here's my maintenance schedule for anxiety...",
+            "url": "https://danhannigan.dev/posts/the-maintenance-of-anxiety",
+            "title": "The Maintenance of Anxiety",
+            "summary": "Since being diagnosed with generalized anxiety disorder in January 2022, I've been on a path of reckoning and recalibration. Over time I've learned what my body & mind need and that if I neglect any of these areas, anxiety can start to rumble back up. Here's my maintenance schedule for anxiety...",
+            "date_modified": "2022-09-13T12:03:12.000Z",
+            "author": {
+                "name": "Dan Hannigan",
+                "url": "https://twitter.com/danhannigan"
+            }
+        },
+        {
             "id": "https://danhannigan.dev/posts/redesigning-my-website-for-2022",
             "content_html": "Much like the shoemakers' children, my website has received very little of the same attention and care that I give to my professional work. This year I wanted to return to my design roots and take a crack at making something for myself that I'd be proud of.",
             "url": "https://danhannigan.dev/posts/redesigning-my-website-for-2022",
