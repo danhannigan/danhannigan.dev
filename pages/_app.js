@@ -34,7 +34,7 @@ function App({ Component, pageProps, router }) {
           site_name: "Dan Hannigan | danhannigan.dev",
           images: [
             {
-              url: "/images/danhannigan-og-image-2022.png",
+              url: "https://danhannigan.dev/images/danhannigan-og-image-2022.png",
               width: 800,
               height: 800,
               alt: "Dan Hannigan",
