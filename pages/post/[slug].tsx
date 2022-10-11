@@ -55,6 +55,14 @@ export default function PostPage({ frontmatter, readingTime, content }) {
     <PageLayout
       title={`${frontmatter.title} - Blog`}
       description={frontmatter.summary}
+      image={[
+        {
+          url: frontmatter.image,
+          width: 1200,
+          height: 675,
+          alt: frontmatter.title,
+        },
+      ]}
     >
       <div className="relative flex flex-row">
         <div className="absolute -mt-16 hidden h-full w-[240px] border-r border-background-accent-dark pb-20 pl-14 text-center md:block">

@@ -23,7 +23,6 @@ function App({ Component, pageProps, router }) {
   }, [router.events]);
   return (
     <div className="flex h-screen flex-col justify-between">
-      <Header />
       <DefaultSeo
         titleTemplate="%s | Dan Hannigan"
         openGraph={{
@@ -33,14 +32,25 @@ function App({ Component, pageProps, router }) {
           description:
             "Personal website for Dan Hannigan, front end developer, designer, and community leader in Denver, Colorado.",
           site_name: "Dan Hannigan | danhannigan.dev",
+          images: [
+            {
+              url: "https://danhannigan.dev/images/danhannigan-og-image-2022.png",
+              width: 800,
+              height: 800,
+              alt: "Dan Hannigan",
+            },
+          ],
         }}
         canonical={url}
         twitter={{
           handle: "@danhannigan",
+          site: "@danhannigan",
+          cardType: "summary_card",
         }}
       />
+      <Header />
       <AnimatePresence
-        exitBeforeEnter
+        mode="wait"
         initial={false}
         onExitComplete={() => window.scrollTo(0, 0)}
       >
