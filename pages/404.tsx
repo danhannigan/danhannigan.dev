@@ -4,7 +4,11 @@ import Link from "next/link";
 
 const NotFound = () => {
   return (
-    <PageLayout title="404 - Error" description="Uh oh, something went wrong">
+    <PageLayout
+      title="404 - Error"
+      description="Uh oh, something went wrong"
+      image=""
+    >
       <Link href="/" scroll={false}>
         <div className="flex flex-col justify-center py-40 text-center align-middle text-9xl blur-md transition-all duration-300 ease-in-out hover:cursor-pointer hover:blur-none">
           <div>404</div>
