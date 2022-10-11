@@ -30,6 +30,7 @@ export default function Home({ readingTable, playingTable, posts }) {
     <PageLayout
       title="Hi, I'm Dan"
       description="A front end developer, designer, and community leader in Denver, Colorado."
+      image=""
     >
       <div className="relative flex flex-row md:pt-16">
         <div className="absolute -mt-16 hidden h-full w-[240px] border-r border-background-accent-dark pb-20 pl-14 text-center md:block">
