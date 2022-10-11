@@ -23,7 +23,6 @@ function App({ Component, pageProps, router }) {
   }, [router.events]);
   return (
     <div className="flex h-screen flex-col justify-between">
-      <Header />
       <DefaultSeo
         titleTemplate="%s | Dan Hannigan"
         openGraph={{
@@ -45,8 +44,11 @@ function App({ Component, pageProps, router }) {
         canonical={url}
         twitter={{
           handle: "@danhannigan",
+          site: "@danhannigan",
+          cardType: "summary_card",
         }}
       />
+      <Header />
       <AnimatePresence
         exitBeforeEnter
         initial={false}
