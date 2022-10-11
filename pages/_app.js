@@ -33,6 +33,14 @@ function App({ Component, pageProps, router }) {
           description:
             "Personal website for Dan Hannigan, front end developer, designer, and community leader in Denver, Colorado.",
           site_name: "Dan Hannigan | danhannigan.dev",
+          images: [
+            {
+              url: "/images/danhannigan-og-image-2022.png",
+              width: 800,
+              height: 800,
+              alt: "Dan Hannigan",
+            },
+          ],
         }}
         canonical={url}
         twitter={{
