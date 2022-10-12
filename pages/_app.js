@@ -45,7 +45,7 @@ function App({ Component, pageProps, router }) {
         twitter={{
           handle: "@danhannigan",
           site: "@danhannigan",
-          cardType: "summary_card",
+          cardType: "summary",
         }}
       />
       <Header />
