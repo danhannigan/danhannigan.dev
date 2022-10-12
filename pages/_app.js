@@ -9,8 +9,7 @@ import Transition from "../components/Transition";
 import { AnimatePresence } from "framer-motion";
 
 function App({ Component, pageProps, router }) {
-  const url = `https://danhannigan.dev${router.route}`;
-
+  const url = `https://danhannigan.dev${router.asPath}`;
   useEffect(() => {
     const handleRouteChange = (url) => {
       ga.pageview(url);
@@ -21,27 +20,20 @@ function App({ Component, pageProps, router }) {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, [router.events]);
+
   return (
     <div className="flex h-screen flex-col justify-between">
       <DefaultSeo
         titleTemplate="%s | Dan Hannigan"
+        canonical={url}
         openGraph={{
           type: "website",
-          locale: "en_IE",
+          locale: "en_US",
           url,
           description:
             "Personal website for Dan Hannigan, front end developer, designer, and community leader in Denver, Colorado.",
           site_name: "Dan Hannigan | danhannigan.dev",
-          images: [
-            {
-              url: "https://danhannigan.dev/images/danhannigan-og-image-2022.png",
-              width: 800,
-              height: 800,
-              alt: "Dan Hannigan",
-            },
-          ],
         }}
-        canonical={url}
         twitter={{
           handle: "@danhannigan",
           site: "@danhannigan",

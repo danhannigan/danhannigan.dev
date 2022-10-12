@@ -7,7 +7,14 @@ const Using = ({ usingTable }) => {
     <PageLayout
       title="Uses"
       description="A list of the things I use daily"
-      image=""
+      image={[
+        {
+          url: "https://danhannigan.dev/images/danhannigan-og-image-2022.png",
+          width: 800,
+          height: 800,
+          alt: "Dan Hannigan",
+        },
+      ]}
     >
       {usingTable.map((item) => (
         <div key={item.id}>{item.name}</div>

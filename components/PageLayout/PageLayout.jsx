@@ -7,7 +7,7 @@ const PageLayout = ({ children, title, description, image }) => {
       <NextSeo
         title={title}
         description={description}
-        openGraph={{ title, description, image }}
+        openGraph={{ title, description, images: image }}
       />
       <main className="">{children}</main>
     </>
