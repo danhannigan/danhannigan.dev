@@ -10,16 +10,16 @@ function PostSnippet({ data }) {
       key={data.slug}
     >
       <div className="hidden flex-shrink-0 md:block md:pt-10">
-        <PostMeta data={{ ...data.frontmatter, ...data.readingTime }} />
+        <PostMeta data={{ ...data }} />
       </div>
       <div className="max-w-2xl border-l border-r border-background-accent-dark p-4 md:ml-6 md:border-r-0 md:p-10">
         <Link href={`/post/${data.slug}`} scroll={false}>
           <h3 className="mb-4 font-secondary text-xl font-bold transition duration-300 ease-in-out hover:cursor-pointer hover:text-accent md:text-5xl">
-            {data.frontmatter.title}
+            {data.title}
           </h3>
         </Link>
         <p className="text mb-4 font-primary leading-7 text-[#d1d5db] first-line:leading-relaxed">
-          {data.frontmatter.summary}
+          {data.custom_excerpt || data.excerpt}
         </p>
         <ArrowLink
           href={`/post/${data.slug}`}

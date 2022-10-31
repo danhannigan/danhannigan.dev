@@ -7,19 +7,7 @@ import PostMeta from "../../components/PostMeta";
 import BlogSVG from "../../public/BlogSVG.svg";
 import readingTime from "reading-time";
 import { motion } from "framer-motion";
-
-export async function getStaticPaths() {
-  const files = fs.readdirSync("posts");
-  const paths = files.map((fileName) => ({
-    params: {
-      slug: fileName.replace(".mdx", ""),
-    },
-  }));
-  return {
-    paths,
-    fallback: false,
-  };
-}
+import { getGhostPosts, getPostBySlug } from "../../lib/getGhostPosts";
 
 const variants = {
   out: {
@@ -38,29 +26,28 @@ const variants = {
   },
 };
 
-export async function getStaticProps({ params: { slug } }) {
-  const fileName = fs.readFileSync(`posts/${slug}.mdx`, "utf-8");
-  const { data: frontmatter, content } = matter(fileName);
-  return {
-    props: {
-      frontmatter,
-      content,
-      readingTime: readingTime(fileName),
-    },
-  };
+export async function getStaticPaths() {
+  const posts = await getGhostPosts();
+  const paths = posts.map(({ slug }) => ({ params: { slug } }));
+  return { paths, fallback: false };
 }
 
-export default function PostPage({ frontmatter, readingTime, content }) {
+export async function getStaticProps({ params }) {
+  const { slug } = params;
+  const data = await getPostBySlug(slug);
+  return { props: { data } };
+}
+export default function PostPage({ data }) {
   return (
     <PageLayout
-      title={`${frontmatter.title} - Blog`}
-      description={frontmatter.summary}
+      title={`${data.title} - Blog`}
+      description={data.custom_excerpt || data.excerpt}
       image={[
         {
-          url: frontmatter.image,
+          url: data.og_image,
           width: 1200,
           height: 675,
-          alt: frontmatter.title,
+          alt: data.title,
         },
       ]}
     >
@@ -89,15 +76,15 @@ export default function PostPage({ frontmatter, readingTime, content }) {
           >
             <section className="md:block md:pt-44">
               <div className="hidden flex-shrink-0 md:block md:pt-10">
-                <PostMeta data={{ ...frontmatter, ...readingTime }} />
+                <PostMeta data={{ ...data }} />
               </div>
             </section>
             <section className="max-w-2xl border-l border-r border-background-accent-dark p-4 md:ml-6 md:border-r-0 md:p-10">
               <h3 className="mb-8 pt-20 font-secondary text-4xl font-bold md:pt-44 md:text-5xl">
-                {frontmatter.title}
+                {data.title}
               </h3>
               <div
-                dangerouslySetInnerHTML={{ __html: md().render(content) }}
+                dangerouslySetInnerHTML={{ __html: data.html }}
                 className="prose prose-invert prose-headings:font-secondary prose-p:font-primary prose-a:text-accent prose-blockquote:border-background-accent-dark prose-hr:border-background-accent-dark md:prose-base"
               />
             </section>
