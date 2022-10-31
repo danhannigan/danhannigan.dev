@@ -44,7 +44,7 @@ export default function PostPage({ data }) {
       description={data.custom_excerpt || data.excerpt}
       image={[
         {
-          url: data.og_image,
+          url: data.twitter_image,
           width: 1200,
           height: 675,
           alt: data.title,
