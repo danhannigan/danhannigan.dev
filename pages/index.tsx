@@ -1,5 +1,5 @@
 import { getReadingTable, getPlayingTable } from "../lib/getAirbnbData";
-import { getPosts } from "../lib/getPosts";
+import { getGhostPosts } from "../lib/getGhostPosts";
 import generateRSS from "../lib/generateRSSFeed";
 import { motion } from "framer-motion";
 
@@ -8,7 +8,7 @@ import ItemList from "../components/ItemList";
 import PostSnippet from "../components/PostSnippet";
 import BlogSVG from "../public/BlogSVG.svg";
 
-export default function Home({ readingTable, playingTable, posts }) {
+export default function Home({ readingTable, playingTable, ghostPosts }) {
   const variants = {
     out: {
       opacity: 0,
@@ -56,7 +56,7 @@ export default function Home({ readingTable, playingTable, posts }) {
           variants={variants}
           className="blog-index flex-grow"
         >
-          {posts.map((post) => (
+          {ghostPosts.map((post) => (
             <PostSnippet data={post} key={post.slug} />
           ))}
         </motion.div>
@@ -71,13 +71,13 @@ export default function Home({ readingTable, playingTable, posts }) {
 
 export async function getStaticProps() {
   await generateRSS();
-  const posts = getPosts();
+  const ghostPosts = await getGhostPosts();
 
   return {
     props: {
       readingTable: await getReadingTable(),
       playingTable: await getPlayingTable(),
-      posts,
+      ghostPosts,
     },
   };
 }
