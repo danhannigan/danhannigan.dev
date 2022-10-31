@@ -44,7 +44,9 @@ export default function PostPage({ data }) {
       description={data.custom_excerpt || data.excerpt}
       image={[
         {
-          url: data.twitter_image,
+          url:
+            data.twitter_image ||
+            "https://danhannigan.dev/images/danhannigan-og-image-2022.png",
           width: 1200,
           height: 675,
           alt: data.title,
