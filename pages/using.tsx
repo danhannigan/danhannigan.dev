@@ -1,6 +1,6 @@
 import React from "react";
 import PageLayout from "../components/PageLayout";
-import { getUsingTable } from "../lib/getAirbnbData";
+import { getUsingTable } from "../lib/getAirtableData";
 
 const Using = ({ usingTable }) => {
   return (

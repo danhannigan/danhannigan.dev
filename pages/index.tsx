@@ -1,4 +1,4 @@
-import { getReadingTable, getPlayingTable } from "../lib/getAirbnbData";
+import { getReadingTable, getPlayingTable } from "../lib/getAirtableData";
 import { getGhostPosts } from "../lib/getGhostPosts";
 import generateRSS from "../lib/generateRSSFeed";
 import { motion } from "framer-motion";

@@ -21,8 +21,8 @@ function ItemList({ type, data }) {
             <a href={item.url}>
               <div className="relative block h-44 w-28 border-[5px] border-background-accent-dark p-2">
                 <Image
-                  loader={() => item.cover[0].url}
-                  src={item.cover[0].url}
+                  loader={() => item.imageURL}
+                  src={item.imageURL}
                   layout="fill"
                   objectFit="cover"
                   alt={item.name}
