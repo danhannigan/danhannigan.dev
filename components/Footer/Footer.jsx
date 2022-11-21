@@ -29,6 +29,12 @@ function Footer() {
             </li>
             <li className="flex items-center gap-2 md:gap-3">
               <ArrowIcon className="h-4  md:h-4" />
+              <a rel="me" href="https://indieweb.social/@danhannigan">
+                Mastodon
+              </a>
+            </li>
+            <li className="flex items-center gap-2 md:gap-3">
+              <ArrowIcon className="h-4  md:h-4" />
               <a href="https://www.linkedin.com/in/danhannigan/" className="">
                 Linkedin
               </a>
