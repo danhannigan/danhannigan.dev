@@ -4,7 +4,7 @@ import md from "markdown-it";
 import Link from "next/link";
 import PageLayout from "../../components/PageLayout";
 import PostMeta from "../../components/PostMeta";
-import BlogSVG from "../../public/BlogSVG.svg";
+import BlogSVG from "../../public/Blog.svg";
 import readingTime from "reading-time";
 import { motion } from "framer-motion";
 import { getGhostPosts, getPostBySlug } from "../../lib/getGhostPosts";
