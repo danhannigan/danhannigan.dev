@@ -1,11 +1,7 @@
-import fs from "fs";
-import matter from "gray-matter";
-import md from "markdown-it";
 import Link from "next/link";
 import PageLayout from "../../components/PageLayout";
 import PostMeta from "../../components/PostMeta";
-import BlogSVG from "../../public/Blog.svg";
-import readingTime from "reading-time";
+import BlogSVG from "../../public/BLOG.svg";
 import { motion } from "framer-motion";
 import { getGhostPosts, getPostBySlug } from "../../lib/getGhostPosts";
 

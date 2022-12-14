@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import PageLayout from "../components/PageLayout";
 import ItemList from "../components/ItemList";
 import PostSnippet from "../components/PostSnippet";
-import BlogSVG from "../public/Blog-2022.svg";
+import BlogSVG from "../public/BLOG-2022.svg";
 
 export default function TwentyTwentyTwo({
   readingTable,
