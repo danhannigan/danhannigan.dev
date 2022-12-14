@@ -2,16 +2,21 @@ import React from "react";
 import Image from "next/image";
 import format from "date-fns/format";
 
-import ReadSVG from "./Read.svg";
-import PlaySVG from "./Play.svg";
+import Read2023 from "../../public/READ-2023.svg";
+import Play2023 from "../../public/PLAY-2023.svg";
+import Read2022 from "../../public/READ-2022.svg";
+import Play2022 from "../../public/PLAY-2022.svg";
 
-function ItemList({ type, data }) {
+function ItemList({ type, data, year }) {
   return (
-    <div className="relative bg-background-dark">
+    <div className="relative min-h-[184.5px] bg-background-dark">
       <div className="absolute z-20 mr-12 -mt-5 bg-background-dark/70 pl-4 pb-20 pt-5 backdrop-blur-md md:pl-14">
         <div className="block w-[140px] flex-auto text-center">
-          {type === "read" && <ReadSVG />}
-          {type === "play" && <PlaySVG />}
+          {/* lol this is so bad */}
+          {year === "2023" && type === "read" && <Read2023 />}
+          {year === "2023" && type === "play" && <Play2023 />}
+          {year === "2022" && type === "read" && <Read2022 />}
+          {year === "2022" && type === "play" && <Play2022 />}
         </div>
       </div>
 
@@ -44,6 +49,11 @@ function ItemList({ type, data }) {
             </div>
           </div>
         ))}
+        {data.length === 0 && (
+          <div className="text-md flex h-44 w-28 items-center border-[5px] border-background-accent-dark p-2 text-center font-bold uppercase text-background-accent-neutral">
+            Nothing yet
+          </div>
+        )}
       </div>
     </div>
   );
