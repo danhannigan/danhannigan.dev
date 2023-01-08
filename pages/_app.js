@@ -12,16 +12,6 @@ import { AnimatePresence } from "framer-motion";
 
 function App({ Component, pageProps, router }) {
   const url = `https://danhannigan.dev${router.asPath}`;
-  useEffect(() => {
-    const handleRouteChange = (url) => {
-      ga.pageview(url);
-    };
-    router.events.on("routeChangeComplete", handleRouteChange);
-
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router.events]);
 
   return (
     <PlausibleProvider domain="danhannigan.dev">
