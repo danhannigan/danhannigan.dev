@@ -4,6 +4,7 @@ import PostMeta from "../../components/PostMeta";
 import BlogSVG from "../../public/BLOG.svg";
 import { motion } from "framer-motion";
 import { getGhostPosts, getPostBySlug } from "../../lib/getGhostPosts";
+import { getWebMentions } from "../../lib/getWebMentions";
 
 const variants = {
   out: {
@@ -22,17 +23,6 @@ const variants = {
   },
 };
 
-export async function getStaticPaths() {
-  const posts = await getGhostPosts();
-  const paths = posts.map(({ slug }) => ({ params: { slug } }));
-  return { paths, fallback: false };
-}
-
-export async function getStaticProps({ params }) {
-  const { slug } = params;
-  const data = await getPostBySlug(slug);
-  return { props: { data } };
-}
 export default function PostPage({ data }) {
   return (
     <PageLayout
@@ -91,4 +81,17 @@ export default function PostPage({ data }) {
       </div>
     </PageLayout>
   );
+}
+
+export async function getStaticPaths() {
+  const posts = await getGhostPosts();
+  const paths = posts.map(({ slug }) => ({ params: { slug } }));
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps({ params }) {
+  const { slug } = params;
+  const data = await getPostBySlug(slug);
+  const webMentions = await getWebMentions();
+  return { props: { data, webMentions } };
 }
