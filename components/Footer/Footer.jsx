@@ -47,8 +47,8 @@ function Footer() {
             </li>
           </ul>
           <div className="mt-3 text-xs">
-            Copyright Dan Hannigan 2022. Built with Next.js, Tailwind, and
-            Airtable
+            Copyright Dan Hannigan {new Date().getFullYear()}. Built with
+            Next.js, Tailwind, and Airtable
           </div>
         </div>
       </div>

@@ -20,7 +20,7 @@ function ItemList({ type, data, year }) {
         </div>
       </div>
 
-      <div className="scroll no-scrollbar flex gap-9 overflow-x-scroll pl-[192px] md:pl-[276px]">
+      <div className="scroll no-scrollbar flex min-h-[184px] gap-9 overflow-x-scroll pl-[192px] md:pl-[276px]">
         {data.map((item) => (
           <div className="flex flex-col" key={item.id}>
             <a href={item.url}>

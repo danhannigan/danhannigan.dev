@@ -4,7 +4,7 @@
         <title>Dan Hannnigan</title>
         <link>https://danhannigan.dev</link>
         <description>Personal website for Dan Hannigan, front end developer, designer, and community leader in Denver, Colorado.</description>
-        <lastBuildDate>Sun, 08 Jan 2023 23:46:38 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Jan 2023 04:59:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -13,6 +13,27 @@
             <link>https://danhannigan.dev</link>
         </image>
         <copyright>All rights reserved 2023, Dan Hannigan</copyright>
+        <item>
+            <title><![CDATA[My 2023 priorities and goals]]></title>
+            <link>https://danhannigan.dev/post/2023-goals</link>
+            <guid>https://danhannigan.dev/post/2023-goals</guid>
+            <pubDate>Wed, 11 Jan 2023 17:31:49 GMT</pubDate>
+            <description><![CDATA[I know there's plenty of wisdom this year saying, "don't set goals," "don't do new years resolutions!" and I get the gist; I'm here for it, and I understand it. But I like doing these things; it helps give me compass points to head to in the year. ]]></description>
+            <content:encoded><![CDATA[<p>I know there's plenty of wisdom this year saying, "don't set goals," "don't do new years resolutions!" and I get the gist; I'm here for it, and I understand it. But I like doing these things; it helps give me compass points to head to in the year. <br><br>Here's what I've got on my mind for the coming year: </p><!--kg-card-begin: markdown--><ul>
+<li>Break down goals &amp; priorities into quarters and check in at the end of them, see what went well and what didn't, and adjust as needed.</li>
+<li>Spend more time with folks. This could be friends at a get-together, strangers at a meetup, etc.</li>
+<li>Recompose my body. A big goal of mine for years has been to lose weight and gain muscle, and I'm finally taking the proper steps to make that a reality. There's a fit little dude in my head when I picture myself, and I want to make that a reality.</li>
+<li>Branch out at work - meet the right people, and dig in. Focus on leaning into either tech leadership or management.</li>
+<li>Read 40 books (I read 34 last year, this is doable)</li>
+<li>Make sure some of those books aren't sci-fi or fantasy (I read 34 sci-fi and fantasy books last year. This might be doable)</li>
+<li>Plan a wedding!</li>
+<li>Visit two places in CO or surrounding areas with Jana. Either Moab, a nice mountain town, or something else.</li>
+<li>Help others create meetups, communities, and more for the Denver Tech scene.</li>
+<li>Write more, blog more.</li>
+</ul>
+<!--kg-card-end: markdown-->]]></content:encoded>
+            <author>hi@danhannigan.dev (Dan Hannigan)</author>
+        </item>
         <item>
             <title><![CDATA[We're engaged!]]></title>
             <link>https://danhannigan.dev/post/were-engaged</link>
