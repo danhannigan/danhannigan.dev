@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["dl.airtable.com"],
+    domains: ["dl.airtable.com", "webmention.io", "pbs.twimg.com"],
   },
 };
 

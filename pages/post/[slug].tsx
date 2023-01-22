@@ -5,6 +5,7 @@ import BlogSVG from "../../public/BLOG.svg";
 import { motion } from "framer-motion";
 import { getGhostPosts, getPostBySlug } from "../../lib/getGhostPosts";
 import { getWebMentions } from "../../lib/getWebMentions";
+import Image from "next/image";
 
 const variants = {
   out: {
@@ -23,7 +24,7 @@ const variants = {
   },
 };
 
-export default function PostPage({ data }) {
+export default function PostPage({ data, wmLikes, wmComments }) {
   return (
     <PageLayout
       title={`${data.title} - Blog`}
@@ -55,7 +56,7 @@ export default function PostPage({ data }) {
             </Link>
           </motion.div>
         </div>
-        <article className=" flex border-b border-background-accent-dark md:pl-[270px]">
+        <article className="flex border-b border-background-accent-dark md:pl-[270px]">
           <motion.div
             className="md:flex"
             animate="in"
@@ -75,6 +76,60 @@ export default function PostPage({ data }) {
                 dangerouslySetInnerHTML={{ __html: data.html }}
                 className="prose prose-invert prose-headings:font-secondary prose-p:font-primary prose-a:text-accent prose-blockquote:border-background-accent-dark prose-hr:border-background-accent-dark md:prose-base"
               />
+              <div className="mt-8 border-t border-background-accent-dark pt-4">
+                {wmLikes.length > 0 && (
+                  <h4 className="font-secondary text-background-accent-neutral">
+                    {wmLikes.length} Like{wmLikes.length > 1 ? "s" : ""}
+                  </h4>
+                )}
+                <ul className="mt-4 flex flex-wrap">
+                  {wmLikes.map((like) => (
+                    <li
+                      key={like.id}
+                      className="mr-2 mb-2 h-10 w-10 overflow-hidden rounded-full"
+                    >
+                      <Image
+                        loader={() => like.author.photo}
+                        src={like.author.photo}
+                        width="40px"
+                        height="40px"
+                        alt={like.author.name}
+                      />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="mt-8 border-t border-background-accent-dark pt-4">
+                {wmComments.length > 0 && (
+                  <h4 className="font-secondary text-background-accent-neutral">
+                    Comments
+                  </h4>
+                )}
+                {wmComments.length > 0 && (
+                  <ul className="mt-4">
+                    {wmComments.map((comment) => (
+                      <li key={comment.id} className="mb-4 flex  pb-4">
+                        <div className="mr-4 h-10 w-10 overflow-hidden rounded-full">
+                          <Image
+                            loader={() => comment.author.photo}
+                            src={comment.author.photo}
+                            width="40px"
+                            height="40px"
+                            alt={comment.author.name}
+                          />
+                        </div>
+                        <div className="flex flex-col font-secondary ">
+                          <div className="mb-1 font-primary text-yellow-600">
+                            {comment.author.name}
+                          </div>
+                          <div>{comment.content.text}</div>
+                          <div className="w-56 border-b border-background-accent-dark pt-4"></div>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
             </section>
           </motion.div>
         </article>
@@ -93,5 +148,12 @@ export async function getStaticProps({ params }) {
   const { slug } = params;
   const data = await getPostBySlug(slug);
   const webMentions = await getWebMentions();
-  return { props: { data, webMentions } };
+  const fullSlug = `https://www.danhannigan.dev/post/${slug}`;
+  const wmLikes = webMentions.filter((mention) =>
+    fullSlug.includes(mention["like-of"])
+  );
+  const wmComments = webMentions.filter((mention) =>
+    fullSlug.includes(mention["in-reply-to"])
+  );
+  return { props: { data, wmLikes, wmComments } };
 }
