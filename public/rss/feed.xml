@@ -4,7 +4,7 @@
         <title>Dan Hannnigan</title>
         <link>https://danhannigan.dev</link>
         <description>Personal website for Dan Hannigan, front end developer, designer, and community leader in Denver, Colorado.</description>
-        <lastBuildDate>Sun, 22 Jan 2023 17:15:55 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 22 Feb 2023 20:40:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -13,6 +13,15 @@
             <link>https://danhannigan.dev</link>
         </image>
         <copyright>All rights reserved 2023, Dan Hannigan</copyright>
+        <item>
+            <title><![CDATA[Monthly Wrap-up, Jan 2023]]></title>
+            <link>https://danhannigan.dev/post/monthly-wrap-up-january-2023</link>
+            <guid>https://danhannigan.dev/post/monthly-wrap-up-january-2023</guid>
+            <pubDate>Mon, 30 Jan 2023 18:13:00 GMT</pubDate>
+            <description><![CDATA[Kicking off the new year with a little list wrap-up of my goings-on in January 2023. ]]></description>
+            <content:encoded><![CDATA[<ul><li>Launched <a href="https://www.denvertechsocial.club">Denver Tech Social Club</a></li><li>Launched <a href="https://www.denvertech.community?ref=&quot;DanHannigan.dev - Blog Post&quot;">Denver Tech Community</a></li><li>Met a handful of new folks by saying yes to more things - random coffee shop hangouts, virtual one-on-ones, and the DTSC game night at TRVE!  </li><li>Went to Develop Happy Hour for the first time in years. </li><li>Went to an Avs game with my long-time friend (and Rockies photographer) <a href="https://www.instagram.com/kylecoopah/?hl=en">Kyle</a>!</li><li>Learned how to mess up a couch order, and now we have to wait for a couch til March. Did you know sectionals are described by how you look at them? So... "Left-arm" = arm on the left when you're looking at it, not... physically on the left. Fun. </li><li>Narrowed down some venues for our mini-wedding! (Botanic Gardens in Denver, maybe!) </li><li>Drag Race season 15 kicked off, and I'm enjoying it (Jax and Anetra are my favs so far) </li><li>Absolutely loving The Last of Us on HBO (who isn't?) </li><li>Binged season one of "Servant" from Apple TV and did not expect it to be so intriguing. </li><li>Finished three books, working on the 4th! All of them were fantasy, but I've been trying to punch through the <a href="https://www.goodreads.com/series/192821-cradle">Cradle Series by Will Wight</a>; I'm on the most recently published book (Dreadgod). I tend to focus on a series when I'm in it. </li><li>Personal training is going great, and my weight is stable.</li><li>My personal trainer has me shooting for 180+ grams of protein a day, which is a lot! That's been my biggest challenge this month.  </li><li>My dad got a successful knee surgery, which should help him out a lot!</li></ul><h3 id="favorite-things-this-month">Favorite things this month: </h3><ul><li>Wishy Washy station on Apple Music</li><li>Elden Ring</li><li>My Kindle Oasis from Jana</li><li>Generous free plans from apps like Orbit.love, SendGrid, and Airtable</li><li>Meeting new people</li><li>Friends who spontaneously invite you to Avs games 🤗 </li></ul><h3 id="pics-from-the-month">Pics from the month</h3><figure class="kg-card kg-image-card kg-card-hascaption"><img src="http://res-4.cloudinary.com/dznptdira/image/upload/q_auto/v1/blog-images/IMG_1078.jpg" class="kg-image" alt="Photo of a crowd at a hockey game for the Colorado Avalanche " loading="lazy" width="768" height="1024"><figcaption>Our seats for the Avs game!</figcaption></figure><figure class="kg-card kg-image-card kg-card-hascaption"><img src="http://res-2.cloudinary.com/dznptdira/image/upload/q_auto/v1/blog-images/IMG_1107.jpg" class="kg-image" alt="Image of a large off-white couch in a livingroom" loading="lazy" width="1280" height="960"><figcaption>What our new couch <em>will</em> look like when I get the right one (this was not the right one, but we disguised it)&nbsp;</figcaption></figure>]]></content:encoded>
+            <author>hi@danhannigan.dev (Dan Hannigan)</author>
+        </item>
         <item>
             <title><![CDATA[My 2023 priorities and goals]]></title>
             <link>https://danhannigan.dev/post/2023-goals</link>

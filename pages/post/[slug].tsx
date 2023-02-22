@@ -122,7 +122,9 @@ export default function PostPage({ data, wmLikes, wmComments }) {
                           <div className="mb-1 font-primary text-yellow-600">
                             {comment.author.name}
                           </div>
-                          <div>{comment.content.text}</div>
+                          {comment.content?.text && (
+                            <div>{comment.content?.text}</div>
+                          )}
                           <div className="w-56 border-b border-background-accent-dark pt-4"></div>
                         </div>
                       </li>
